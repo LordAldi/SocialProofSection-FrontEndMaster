@@ -1,10 +1,60 @@
 .container {
   padding: 2.5em 1em 0;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1em 3em;
+    justify-content: center;
+    padding: 5em 7em;
+  }
 }
 
 .rate-card-group {
   margin: 2em 0;
+  .rate-card:nth-child(1) {
+    animation: 1s ease-in 0s 1 slideInFromLeft;
+  }
+  .rate-card:nth-child(2) {
+    animation: 1.5s ease-in 0s 1 slideInFromLeft;
+  }
+  .rate-card:nth-child(3) {
+    animation: 2s ease-in 0s 1 slideInFromLeft;
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    .rate-card:nth-child(1) {
+      right: 6em;
+    }
+    .rate-card:nth-child(2) {
+      right: 3em;
+    }
+  }
 }
 .review-card-group {
   margin: 2em 0;
+  .review-card:nth-child(1) {
+    animation: 2s ease-in 0s 1 slideInFromBottom;
+  }
+  .review-card:nth-child(2) {
+    animation: 2.3s ease-in 0s 1 slideInFromBottom;
+  }
+  .review-card:nth-child(3) {
+    animation: 2.6s ease-in 0s 1 slideInFromBottom;
+  }
+
+  @media (min-width: 768px) {
+    grid-column-start: span 2;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 2%;
+    .review-card:nth-child(2) {
+      top: 2em;
+    }
+    .review-card:nth-child(3) {
+      top: 4em;
+    }
+  }
 }

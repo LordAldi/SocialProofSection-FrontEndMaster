@@ -5,11 +5,31 @@ $primary-pink: hsl(333, 80%, 67%);
 $neutral-dark-gray: hsl(303, 10%, 53%);
 $neutral-light-gray: hsl(300, 24%, 96%);
 $neutral-white: hsl(0, 0%, 100%);
-@import "layout";
-@import "typography";
-@import "card";
 
 * {
   font-family: "Spartan", sans-serif;
   box-sizing: border-box;
 }
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 100;
+  }
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+@import "layout";
+@import "typography";
+@import "card";
