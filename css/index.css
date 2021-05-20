@@ -1,9 +1,117 @@
-.header {
-  background-color: red;
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+.container {
+  padding: 2.5em 1em 0;
+}
+
+.rate-card-group {
+  margin: 2em 0;
+}
+
+.review-card-group {
+  margin: 2em 0;
+}
+
+.title {
+  color: #502050;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+.subtitle {
+  text-align: center;
+  color: #937b92;
+  font-size: 0.9rem;
+}
+
+.rate-card {
+  background-color: #f7f2f7;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rate-card .stars img {
+  margin: 0 0.1em;
+}
+
+.rate-card .rate-card-text {
+  color: #502050;
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin: 0.7em 0 0;
+}
+
+.review-card {
+  background-color: #502050;
+  margin: 1em 0;
+  padding: 2em;
+  color: white;
+  border-radius: 10px;
+}
+
+.review-card .review-card-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1em;
+}
+
+.review-card .review-card-head .profile-pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review-card .review-card-head .profile-pic img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.review-card .review-card-head .userdata {
+  margin-left: 1em;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.review-card .review-card-head .userdata .username {
+  margin: 0;
+}
+
+.review-card .review-card-head .userdata .verified {
+  margin: 0;
+  color: #ee68a4;
+}
+
+.review-card .review-card-content {
+  font-size: 0.79rem;
+  line-height: 1.5;
 }
 
 * {
-  padding: 0;
-  margin: 0;
+  font-family: "Spartan", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=index.css.map */

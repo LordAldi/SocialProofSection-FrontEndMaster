@@ -1,0 +1,59 @@
+.rate-card {
+  background-color: $neutral-light-gray;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .stars {
+    img {
+      margin: 0 0.1em;
+    }
+  }
+  .rate-card-text {
+    color: $primary-magenta;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin: 0.7em 0 0;
+  }
+}
+
+.review-card {
+  background-color: $primary-magenta;
+  margin: 1em 0;
+  padding: 2em;
+  color: $neutral-white;
+  border-radius: 10px;
+  .review-card-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    .profile-pic {
+      display: flex;
+      align-items: center;
+      img {
+        border-radius: 50%;
+        width: 50px;
+      }
+    }
+    .userdata {
+      margin-left: 1em;
+      font-size: 0.8rem;
+      display: flex;
+      flex-direction: column;
+
+      .username {
+        margin: 0;
+      }
+      .verified {
+        margin: 0;
+        color: $primary-pink;
+      }
+    }
+  }
+  .review-card-content {
+    font-size: 0.79rem;
+    line-height: 1.5;
+  }
+}
